@@ -1,4 +1,4 @@
-# TicTacToe
+# TicTacToe https://blasterwhite.github.io/TicTacToe/
 The game TicTacToe
 
 #TODO
