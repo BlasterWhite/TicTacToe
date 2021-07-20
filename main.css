@@ -1,0 +1,63 @@
+:root {
+    --bgcolor: rgb(255, 255, 255);
+    --bgcolorhover: rgb(224, 224, 224);
+    --buttonhover: rgb(0, 197, 10);
+    --player1: rgb(0, 104, 240);
+    --player2: rgb(235, 14, 51);
+}
+
+body {
+    background-color: #262626;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+div.game  table{
+    margin: 0 auto;
+}
+
+div.game tr th {
+    width: 125px;
+    height: 125px;
+    background-color: var(--bgcolor);
+    border: 1px solid var(--bgcolor);
+    border-radius: 8px;
+    transition: 0.3s;
+    font-size: 50px;
+}
+
+div.game tr th:hover {
+    background-color: var(--bgcolorhover);
+    border: 1px solid var(--bgcolorhover);
+}
+
+button.reset {
+    font-size: 25px;
+    margin-top: 45px;
+    padding: 15px;
+    border: 1px solid;
+    transition: 0.3s;
+}
+
+button.reset:hover {
+    background-color: var(--buttonhover);
+    border: var(--buttonhover) 1px solid;
+    border-radius: 15px;
+}
+
+div.score div {
+    margin: 0 auto;
+    display: block;
+    float: left;
+    width: 33%;
+}
+
+div.score button {
+    margin: 150px auto;
+    display: block;
+    float: left;
+    width: 33%;
+}

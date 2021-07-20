@@ -1,0 +1,45 @@
+<script src="app.js"></script>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morpion</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" type="image/png" href="assets/icon.png" />
+</head>
+<body>
+    <h1>Morpion</h1>
+    <div class="game">
+        <table>
+            <tr>
+                <th id="A1" onclick="display(0, 0, 'A1')"></th>
+                <th id="A2" onclick="display(0, 1, 'A2')"></th>
+                <th id="A3" onclick="display(0, 2, 'A3')"></th>
+            </tr>
+            <tr>
+                <th id="B1" onclick="display(1, 0, 'B1')"></th>
+                <th id="B2" onclick="display(1, 1, 'B2')"></th>
+                <th id="B3" onclick="display(1, 2, 'B3')"></th>
+            </tr>
+            <tr>
+                <th id="C1" onclick="display(2, 0, 'C1')"></th>
+                <th id="C2" onclick="display(2, 1, 'C2')"></th>
+                <th id="C3" onclick="display(2, 2, 'C3')"></th>
+            </tr>
+        </table>
+    </div>
+    <div class="score">
+        <div>
+            <h3 style="color: var(--player1);font-size: 60px;">X : </h3>
+            <h4 id="xScore" style="font-size: 60px;">0</h4>
+        </div>
+        <button onclick="reset()" class="reset">Reset</button>
+        <div>
+            <h3 style="color: var(--player2);font-size: 60px;">O : </h3>
+            <h4 id="oScore" style="font-size: 60px;">0</h4>
+        </div>
+    </div>
+</body>
+</html>
